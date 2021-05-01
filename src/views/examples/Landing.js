@@ -17,14 +17,14 @@
 */
 import React from "react";
 // nodejs library that concatenates classes
-import classnames from "classnames";
-import promo1 from "assets/img/theme/promo-1.png";
-import cardImg from "assets/img/theme/img-1-1200x1000.jpg";
-import ill2 from "assets/img/ill/ill-2.svg";
-import team1 from "assets/img/theme/team-1-800x800.jpg";
-import team2 from "assets/img/theme/team-2-800x800.jpg";
-import team3 from "assets/img/theme/team-3-800x800.jpg";
-import team4 from "assets/img/theme/team-4-800x800.jpg";
+// import classnames from "classnames";
+// import promo1 from "assets/img/theme/promo-1.png";
+// import cardImg from "assets/img/theme/img-1-1200x1000.jpg";
+// import ill2 from "assets/img/ill/ill-2.svg";
+// import team1 from "assets/img/theme/team-1-800x800.jpg";
+// import team2 from "assets/img/theme/team-2-800x800.jpg";
+// import team3 from "assets/img/theme/team-3-800x800.jpg";
+// import team4 from "assets/img/theme/team-4-800x800.jpg";
 
 // reactstrap components
 import {
@@ -33,11 +33,11 @@ import {
   Card,
   CardBody,
   CardImg,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
+  // FormGroup,
+  // Input,
+  // InputGroupAddon,
+  // InputGroupText,
+  // InputGroup,
   Container,
   Row,
   Col
@@ -45,10 +45,11 @@ import {
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import CardsFooter from "components/Footers/CardsFooter.js";
+// import CardsFooter from "components/Footers/CardsFooter.js";
+import profile from 'assets/img/profileImage.jpg';
 
 // index page sections
-import Download from "../IndexSections/Download.js";
+// import Download from "../IndexSections/Download.js";
 
 class Landing extends React.Component {
   state = {};
@@ -80,16 +81,16 @@ class Landing extends React.Component {
                 <div className="col px-0">
                   <Row>
                     <Col lg="6">
-                      <h1 className="display-3 text-white">
-                        A beautiful Design System{" "}
-                        <span>completed with examples</span>
+                      <h1 className="display-3 text-white" style={{fontSize:'1.69rem'}}>
+                        Once you tasted the beauty of programming , you won't ever stop it.{" "}
+                        {/* <span>completed with examples</span> */}
                       </h1>
                       <p className="lead text-white">
-                        The design system comes with four pre-built pages to
-                        help you get started faster. You can change the text and
-                        images and you're good to go.
+                        The most thing I love about programming , is that how it can solve a lot of problems in 
+                        just a bunch of text lines , besides it gives you the ability to create more new things more great more beautiful .
+                        <br></br> I can describe the programming as another world you don't want to leave it if you got it .
                       </p>
-                      <div className="btn-wrapper">
+                      {/* <div className="btn-wrapper">
                         <Button
                           className="btn-icon mb-3 mb-sm-0"
                           color="info"
@@ -112,7 +113,7 @@ class Landing extends React.Component {
                             Download React
                           </span>
                         </Button>
-                      </div>
+                      </div> */}
                     </Col>
                   </Row>
                 </div>
@@ -148,7 +149,41 @@ class Landing extends React.Component {
                             <i className="ni ni-check-bold" />
                           </div>
                           <h6 className="text-primary text-uppercase">
-                            Download Argon
+                            Easy-Resume project
+                          </h6>
+                          <p className="description mt-3">
+                            A website to create your own resume in few steps.
+                          </p>
+                          <div>
+                            <Badge color="primary" pill className="mr-1">
+                              HTML
+                            </Badge>
+                            <Badge color="primary" pill className="mr-1">
+                              CSS
+                            </Badge>
+                            <Badge color="primary" pill className="mr-1">
+                              JavaScript
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4"
+                            color="primary"
+                            href="https://github.com/MADQM/Easy-Resume"
+                            onClick={e => e.preventDefault()}
+                          >
+                            Learn more
+                          </Button>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
+                            <i className="ni ni-istanbul" />
+                          </div>
+                          <h6 className="text-success text-uppercase">
+                            Build Something
                           </h6>
                           <p className="description mt-3">
                             Argon is a great free UI package based on Bootstrap
@@ -156,20 +191,96 @@ class Landing extends React.Component {
                             features.
                           </p>
                           <div>
+                            <Badge color="success" pill className="mr-1">
+                              business
+                            </Badge>
+                            <Badge color="success" pill className="mr-1">
+                              vision
+                            </Badge>
+                            <Badge color="success" pill className="mr-1">
+                              success
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4"
+                            color="success"
+                            href="#pablo"
+                            onClick={e => e.preventDefault()}
+                          >
+                            Learn more
+                          </Button>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                            <i className="ni ni-planet" />
+                          </div>
+                          <h6 className="text-warning text-uppercase">
+                            Prepare Launch
+                          </h6>
+                          <p className="description mt-3">
+                            Argon is a great free UI package based on Bootstrap
+                            4 that includes the most important components and
+                            features.
+                          </p>
+                          <div>
+                            <Badge color="warning" pill className="mr-1">
+                              marketing
+                            </Badge>
+                            <Badge color="warning" pill className="mr-1">
+                              product
+                            </Badge>
+                            <Badge color="warning" pill className="mr-1">
+                              launch
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4"
+                            color="warning"
+                            href="#pablo"
+                            onClick={e => e.preventDefault()}
+                          >
+                            Learn more
+                          </Button>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+              <Row className="justify-content-center" style={{marginTop:'3rem'}}>
+                <Col lg="12">
+                  <Row className="row-grid">
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                            <i className="ni ni-check-bold" />
+                          </div>
+                          <h6 className="text-primary text-uppercase">
+                            Easy-Resume project
+                          </h6>
+                          <p className="description mt-3">
+                            A website to create your own resume in few steps.
+                          </p>
+                          <div>
                             <Badge color="primary" pill className="mr-1">
-                              design
+                              HTML
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              system
+                              CSS
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              creative
+                              JavaScript
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
                             color="primary"
-                            href="#pablo"
+                            href="https://github.com/MADQM/Easy-Resume"
                             onClick={e => e.preventDefault()}
                           >
                             Learn more
@@ -254,7 +365,7 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-          <section className="section section-lg">
+          {/* <section className="section section-lg">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
@@ -330,7 +441,7 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
+          </section> */}
           <section className="section bg-secondary">
             <Container>
               <Row className="row-grid align-items-center">
@@ -338,7 +449,7 @@ class Landing extends React.Component {
                   <Card className="bg-default shadow border-0">
                     <CardImg
                       alt="..."
-                      src={cardImg}
+                      src={profile}
                       top
                     />
                     <blockquote className="card-blockquote">
@@ -359,50 +470,38 @@ class Landing extends React.Component {
                         />
                       </svg>
                       <h4 className="display-3 font-weight-bold text-white">
-                        Design System
+                        who I'm doesn't matter
                       </h4>
                       <p className="lead text-italic text-white">
-                        The Arctic Ocean freezes every winter and much of the
-                        sea-ice then thaws every summer, and that process will
-                        continue whatever happens.
+                        what really matters , is what I can give , create , contribute and achieve 
                       </p>
                     </blockquote>
                   </Card>
                 </Col>
                 <Col md="6">
                   <div className="pl-md-5">
-                    <div className="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
+                    {/* <div className="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
                       <i className="ni ni-settings" />
-                    </div>
-                    <h3>Our customers</h3>
+                    </div> */}
+                    <h3>About Me</h3>
                     <p className="lead">
-                      Don't let your uses guess by attaching tooltips and
-                      popoves to any element. Just make sure you enable them
-                      first via JavaScript.
+                    I'm Qusay Al-Amarat from jordan I have a bachelor degree in electrical engineering at the university of jordan ,
+                    which through my education I learned many skills such as teamworking , selflearning and problem solving
+                    besides the ability to work on some softwares like ETAP , SCADA and Simulink , 
+                    but my best skill is coding where the programming language I used was c++ , actually this skill I got from my passion in programming
+                    where I can describe the programming for me it is like sweets for the kids .<br></br>
+                    I'm studying in ASAC to become a software developer , so I can achieve what I dream of , my vision for the future is very clear I want to create my own company where I will be able to give the customers something new ; something great .   
                     </p>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
-                    </p>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
-                    </p>
-                    <a
-                      className="font-weight-bold text-warning mt-5"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      A beautiful UI Kit for impactful websites
-                    </a>
+                    <p className="lead" style={{color:'#ef0909b5'}}>
+                      Briefly , I'm someone dreams of big things , someone every time will try to do better , 
+                      someone will adapt , someone will try to develop everything wherever he is
+                    </p>  
                   </div>
                 </Col>
               </Row>
             </Container>
           </section>
-          <section className="section pb-0 bg-gradient-warning">
+          {/* <section className="section pb-0 bg-gradient-warning">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-lg-2 ml-lg-auto" md="6">
@@ -489,7 +588,7 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-            {/* SVG separator */}
+            {/* SVG separator 
             <div className="separator separator-bottom separator-skew zindex-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -769,7 +868,7 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-            {/* SVG separator */}
+            {/* SVG separator *
             <div className="separator separator-bottom separator-skew zindex-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -860,10 +959,10 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
-          <Download />
+          </section> */}
+          {/* <Download /> */}
         </main>
-        <CardsFooter />
+        {/* <CardsFooter /> */}
       </>
     );
   }

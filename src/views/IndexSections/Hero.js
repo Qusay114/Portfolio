@@ -20,7 +20,8 @@ import React from "react";
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 import reactWhite from "assets/img/brand/argon-react-white.png";
-import creative from "assets/img/brand/creativetim-white-slim.png";
+// import creative from "assets/img/brand/creativetim-white-slim.png";
+import profileImg from 'assets/img/profileImage.jpg';
 
 class Hero extends React.Component {
   render() {
@@ -91,8 +92,8 @@ class Hero extends React.Component {
                       <img
                         alt="..."
                         className="ml-1"
-                        style={{ height: "28px" }}
-                        src={creative}
+                        style={{ height: "8rem" , borderRadius:'10rem' }}
+                        src={profileImg}
                       />
                     </div>
                   </Col>
