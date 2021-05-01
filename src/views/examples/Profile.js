@@ -37,10 +37,10 @@ class Profile extends React.Component {
       <>
         <DemoNavbar />
         <main className="profile-page" ref="main">
-          <section className="section-profile-cover section-shaped my-0">
+          <section className="section-profile-cover section-shaped my-0" style={{background:'#b941b0c4'}}>
             {/* Circles background */}
             <div className="shape shape-style-1 shape-default alpha-4">
-              <span />
+              <span style={{}}/>
               <span />
               <span />
               <span />
@@ -109,16 +109,16 @@ class Profile extends React.Component {
                     <Col className="order-lg-1" lg="4">
                       <div className="card-profile-stats d-flex justify-content-center">
                         <div>
-                          <span className="heading">22</span>
-                          <span className="description">Friends</span>
+                          <span className="heading">20+</span>
+                          <span className="description">Projects</span>
                         </div>
                         <div>
-                          <span className="heading">10</span>
-                          <span className="description">Photos</span>
+                          <span className="heading">5+</span>
+                          <span className="description">Skills</span>
                         </div>
                         <div>
-                          <span className="heading">89</span>
-                          <span className="description">Comments</span>
+                          <span className="heading">2</span>
+                          <span className="description">Languages</span>
                         </div>
                       </div>
                     </Col>
@@ -135,7 +135,7 @@ class Profile extends React.Component {
                     
                     <div className="h6 mt-4">
                       <i className="ni business_briefcase-24 mr-2" />
-                      Software Developer , Electrical Engineer
+                      Front End Developer , Electrical Engineer
                     </div>
                     <div>
                       <i className="ni education_hat mr-2" />
@@ -165,7 +165,7 @@ class Profile extends React.Component {
             </Container>
           </section>
         </main>
-        <SimpleFooter />
+        {/* <SimpleFooter /> */}
       </>
     );
   }

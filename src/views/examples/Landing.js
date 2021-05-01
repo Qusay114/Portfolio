@@ -66,7 +66,7 @@ class Landing extends React.Component {
           <div className="position-relative">
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-250">
-              <div className="shape shape-style-1 shape-default">
+              <div className="shape shape-style-1 shape-default" style={{background:'#b941b0c4'}}>
                 <span />
                 <span />
                 <span />
@@ -183,28 +183,27 @@ class Landing extends React.Component {
                             <i className="ni ni-istanbul" />
                           </div>
                           <h6 className="text-success text-uppercase">
-                            Build Something
+                            Cookie-Stand Project
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                            Cookie Stand is a website to show the Pat Cookie store locations and the sales data for them. 
+                            The project is still in the developing process
                           </p>
                           <div>
                             <Badge color="success" pill className="mr-1">
-                              business
+                              HTML
                             </Badge>
                             <Badge color="success" pill className="mr-1">
-                              vision
+                              CSS
                             </Badge>
                             <Badge color="success" pill className="mr-1">
-                              success
+                              JavaScript
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
                             color="success"
-                            href="#pablo"
+                            href="https://github.com/Qusay114/cookie-stand"
                             onClick={e => e.preventDefault()}
                           >
                             Learn more
@@ -219,12 +218,11 @@ class Landing extends React.Component {
                             <i className="ni ni-planet" />
                           </div>
                           <h6 className="text-warning text-uppercase">
-                            Prepare Launch
+                             HR System
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                            A simple HR System to add the name , email and the department of the new employee to the system
+                            (Note: this project was created for Exam in the ASAC College)
                           </p>
                           <div>
                             <Badge color="warning" pill className="mr-1">
@@ -240,7 +238,7 @@ class Landing extends React.Component {
                           <Button
                             className="mt-4"
                             color="warning"
-                            href="#pablo"
+                            href="https://github.com/Qusay114/HR-system"
                             onClick={e => e.preventDefault()}
                           >
                             Learn more
@@ -324,42 +322,7 @@ class Landing extends React.Component {
                         </CardBody>
                       </Card>
                     </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-planet" />
-                          </div>
-                          <h6 className="text-warning text-uppercase">
-                            Prepare Launch
-                          </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
-                          <div>
-                            <Badge color="warning" pill className="mr-1">
-                              marketing
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              product
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              launch
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="warning"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
+                    
                   </Row>
                 </Col>
               </Row>
@@ -469,11 +432,11 @@ class Landing extends React.Component {
                           points="0,42 583,95 683,0 0,95"
                         />
                       </svg>
-                      <h4 className="display-3 font-weight-bold text-white">
+                      <h4 className="display-3 font-weight-bold text-white" style={{fontSize:'1.5rem'}}>
                         who I'm doesn't matter
                       </h4>
                       <p className="lead text-italic text-white">
-                        what really matters , is what I can give , create , contribute and achieve 
+                        what really matters ; is what I can give , create , contribute and achieve .
                       </p>
                     </blockquote>
                   </Card>
