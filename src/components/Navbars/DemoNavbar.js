@@ -38,8 +38,9 @@ import {
   Col,
   UncontrolledTooltip
 } from "reactstrap";
-import reactWhite from "assets/img/brand/argon-react-white.png";
+// import reactWhite from "assets/img/brand/argon-react-white.png";
 import argonReact from "assets/img/brand/argon-react.png";
+import logo from '../../assets/img/logo.png'
 
 class DemoNavbar extends React.Component {
   componentDidMount() {
@@ -71,14 +72,15 @@ class DemoNavbar extends React.Component {
           <Navbar
             className="navbar-main navbar-transparent navbar-light headroom"
             expand="lg"
-            id="navbar-main"
+            id="navbar-main" 
           >
             <Container>
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
                 <img
                   alt="..."
-                  src={reactWhite}
+                  src={logo}
                 />
+                <span style={{fontFamily: 'Lemonada' , color:'white' , marginLeft:'0.5rem'}}>Qusay</span>
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
                 <span className="navbar-toggler-icon" />
@@ -224,7 +226,7 @@ class DemoNavbar extends React.Component {
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip356693867">
-                      Follow us on Instagram
+                      Follow me on Instagram
                     </UncontrolledTooltip>
                   </NavItem>
                   <NavItem>

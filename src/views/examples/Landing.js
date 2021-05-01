@@ -65,8 +65,8 @@ class Landing extends React.Component {
         <main ref="main">
           <div className="position-relative">
             {/* shape Hero */}
-            <section className="section section-lg section-shaped pb-250">
-              <div className="shape shape-style-1 shape-default" style={{background:'#b941b0c4'}}>
+            <section className="section section-lg section-shaped pb-250" style={{background:'#b941b0c4'}}>
+              <div className="shape shape-style-1 shape-default" >
                 <span />
                 <span />
                 <span />

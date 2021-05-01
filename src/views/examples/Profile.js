@@ -22,7 +22,7 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+// import SimpleFooter from "components/Footers/SimpleFooter.js";
 // import profile from "assets/img/theme/team-4-800x800.jpg";
 import profile from 'assets/img/profileImage.jpg';
 
@@ -47,6 +47,7 @@ class Profile extends React.Component {
               <span />
               <span />
               <span />
+              
             </div>
             {/* SVG separator */}
             <div className="separator separator-bottom separator-skew">
